@@ -30,14 +30,45 @@ main = do
 
     -- Every page written in Markdown (*.md) becomes an .html page,
     -- wrapped in the common layout templates/default.html.
-    match "*.md" $ do
+    -- (blog.md is the exception: it is handled just below.)
+    match ("*.md" .&&. complement "blog.md") $ do
       route   $ setExtension "html"
       compile $ mathPandocCompiler
         >>= loadAndApplyTemplate "templates/default.html" defaultContext
         >>= relativizeUrls
 
+    -- Blog posts: one Markdown file per post in the folder "posts",
+    -- named like 2026-11-13-my-title.md (the date comes from the name).
+    match "posts/*" $ do
+      route   $ setExtension "html"
+      compile $ mathPandocCompiler
+        >>= saveSnapshot "content"          -- remembered for the teaser
+        >>= loadAndApplyTemplate "templates/post.html"    postCtx
+        >>= loadAndApplyTemplate "templates/default.html" postCtx
+        >>= relativizeUrls
+
+    -- The blog page: its own text, followed by a card for every post,
+    -- newest first.
+    match "blog.md" $ do
+      route   $ setExtension "html"
+      compile $ do
+        posts <- recentFirst =<< loadAll "posts/*"
+        let blogCtx = listField "posts" postCtx (return posts) <> defaultContext
+        mathPandocCompiler
+          >>= loadAndApplyTemplate "templates/post-list.html" blogCtx
+          >>= loadAndApplyTemplate "templates/default.html"   defaultContext
+          >>= relativizeUrls
+
     -- The layout itself.
     match "templates/*" $ compile templateBodyCompiler
+
+-- What a post knows about itself: its date (e.g. "13 Nov 2026"),
+-- its teaser (the part above <!--more-->), title, address, text...
+postCtx :: Context String
+postCtx =
+  dateField "date" "%-d %b %Y"
+    <> teaserField "teaser" "content"
+    <> defaultContext
 
 -- Like the normal Markdown converter, but marks $...$ maths so that
 -- KaTeX (loaded in the template) can display it nicely.

@@ -66,6 +66,13 @@ nav a {
   margin-left: 1.2rem;
 }
 nav a:first-child { margin-left: 0; }
+/* Small tree picture next to OPERADS, the height of a capital letter. */
+.nav-emoji {
+  height: 1.1em;
+  width: auto;
+  vertical-align: -0.15em;
+  margin-left: 0.4rem;
+}
 nav a:hover, .logo a:hover { text-decoration: underline; }
 
 /* Titles */
@@ -85,6 +92,27 @@ footer {
 footer a { color: var(--link); }
 
 img { max-width: 100%; }
+
+/* Blog: one card ("plate") per post; the whole card is clickable. */
+.post-list { margin-top: 2rem; }
+.post-card {
+  position: relative;
+  border: 1px solid #b9b6ae;
+  border-left: 0.4rem solid var(--line);
+  background: #dcdbd7;
+  padding: 1.2rem 1.6rem;
+  margin-bottom: 1.6rem;
+  transition: background 0.15s;
+}
+.post-card:hover { background: #e4e3df; }
+.post-card h2 { margin: 0; font-size: 2rem; }
+.post-card h2 a { color: var(--link); text-decoration: none; }
+.post-card h2 a::after { content: ""; position: absolute; inset: 0; }  /* stretches the link over the card */
+.post-card:hover h2 a { text-decoration: underline; }
+.post-card .teaser { color: var(--text); }
+.post-card .teaser p:last-child { margin-bottom: 0; }
+.post-date { color: var(--ipa); font-size: 1.3rem; margin: 0.4rem 0 0.8rem; }
+.back { margin-top: 3rem; }
 
 /* Tables (e.g. the talk schedule): thin lines between rows, none between columns. */
 table {
@@ -117,7 +145,7 @@ th {
 figure {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;   /* pushes picture and caption to the right */
+  align-items: center;     /* picture and caption in the middle of the page */
   margin: 3rem 0 0;
 }
 figure img {
@@ -130,5 +158,5 @@ figcaption {
   margin-top: 0.6rem;
   font-size: 1.2rem;
   color: var(--ipa);
-  text-align: right;
+  text-align: center;
 }

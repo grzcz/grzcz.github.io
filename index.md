@@ -3,10 +3,10 @@ title: Home
 hidetitle: true
 ---
 
-I am a PhD candidate at Paris 13 supervised by
+PhD candidate at Paris 13 supervised by
 [Morgan Rogers](https://lipn.univ-paris13.fr/~rogers/) and
 [Grégory Ginot](https://www.math.univ-paris13.fr/~ginot/).
-Recently thinking about 1-, 2-, $\infty$-, multi-, generalized multi-, ... categories.
+Lately, I've been thinking about 1-, 2-, $\infty$-, multi-, generalized multi-, ... categories.
 
 **Email:** [czech@math.univ-paris13.fr](mailto:czech@math.univ-paris13.fr)
 

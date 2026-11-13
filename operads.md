@@ -33,4 +33,15 @@ Everyone's welcome: [email me](mailto:czech@math.univ-paris13.fr) to be added to
   Link to your own PDF (put it in files/operads/ first):  [pdf](/files/operads/NAME.pdf)
 -->
 
-- T. Leinster, *Higher Operads, Higher Categories*, Cambridge University Press, 2004. [arXiv](https://arxiv.org/abs/math/0305049)
+**The main reference (for now):**
+
+- T. Leinster, *Higher Operads, Higher Categories*, 2004. [arXiv](https://arxiv.org/abs/math/0305049)
+
+**Further reading:**
+
+- B. Cnossen, *Introduction to higher algebra*, 2025. [pdf](https://bastiaancnossen.com/teaching/higher-algebra-2025/lecture-notes-original.pdf)
+- R. Haugseng, *An allegedly somewhat friendly introduction to $\infty$-operads*, 2023. [pdf](https://runegha.folk.ntnu.no/iopd.pdf)
+- J.-L. Loday and B. Vallette, *Algebraic Operads*, 2012. [pdf](https://www.math.univ-paris13.fr/~vallette/Operads.pdf)
+- M. Markl, S. Shnider, and J. Stasheff, *Operads in Algebra, Topology and Physics*, 2002. [AMS](https://doi.org/10.1090/surv/096)
+- J. P. May, *The Geometry of Iterated Loop Spaces*, 1972. [pdf](https://www.math.uchicago.edu/~may/BOOKS/gils.pdf)
+- B. Vallette, *Algebra + Homotopy = Operad*, 2014. [arXiv](https://arxiv.org/abs/1202.3245)

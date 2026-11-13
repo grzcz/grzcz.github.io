@@ -1,0 +1,10 @@
+$body$
+<div class="post-list">
+$for(posts)$
+  <article class="post-card">
+    <h2><a href="$url$">$title$</a></h2>
+    <p class="post-date">$date$</p>
+    $if(teaser)$<div class="teaser">$teaser$</div>$endif$
+  </article>
+$endfor$
+</div>
