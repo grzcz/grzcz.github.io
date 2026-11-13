@@ -17,8 +17,9 @@ main = do
   setLocaleEncoding utf8
   hakyllWith config $ do
 
-    -- Pictures and PDF files (e.g. your CV) are copied as they are.
-    match ("images/*" .||. "files/*") $ do
+    -- Pictures and PDF files are copied as they are.
+    -- "**" also includes sub-folders, e.g. files/operads/talk1.pdf
+    match ("images/**" .||. "files/**") $ do
       route   idRoute
       compile copyFileCompiler
 
