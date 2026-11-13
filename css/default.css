@@ -53,10 +53,13 @@ header {
 }
 .logo .ipa {
   font-size: 1.3rem;
+  font-weight: normal;
   color: var(--ipa);
+  text-decoration: none;
   margin-left: 0.6rem;
   white-space: nowrap;
 }
+.logo .ipa:hover { text-decoration: underline; }
 nav a {
   font-size: 1.8rem;
   font-weight: bold;
