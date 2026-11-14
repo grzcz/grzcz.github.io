@@ -59,8 +59,28 @@ main = do
           >>= loadAndApplyTemplate "templates/default.html"   defaultContext
           >>= relativizeUrls
 
+    -- robots.txt tells search engines where the sitemap is.
+    match "robots.txt" $ do
+      route   idRoute
+      compile copyFileCompiler
+
+    -- sitemap.xml: the list of all pages and posts, read by search engines.
+    -- It updates itself when pages or posts are added.
+    create ["sitemap.xml"] $ do
+      route   idRoute
+      compile $ do
+        pages <- loadAll ("*.md" .||. "posts/*")
+        let sitemapCtx =
+              listField "pages" (constField "root" siteRoot <> defaultContext) (return pages)
+        makeItem ("" :: String)
+          >>= loadAndApplyTemplate "templates/sitemap.xml" sitemapCtx
+
     -- The layout itself.
     match "templates/*" $ compile templateBodyCompiler
+
+-- The public address of the website (used in the sitemap).
+siteRoot :: String
+siteRoot = "https://grzcz.github.io"
 
 -- What a post knows about itself: its date (e.g. "13 Nov 2026"),
 -- its teaser (the part above <!--more-->), title, address, text...

@@ -1,5 +1,6 @@
 ---
 title: Operads GDT
+description: Operads GDT, a working group on operads co-organised by Grzegorz Czech and Elsa Lubek. Schedule, notes and literature.
 ---
 
 A working group on operads, coorganised with Elsa Lubek.
