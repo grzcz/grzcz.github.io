@@ -60,7 +60,8 @@ main = do
           >>= relativizeUrls
 
     -- robots.txt tells search engines where the sitemap is.
-    match "robots.txt" $ do
+    -- Google Search Console ownership file (google....html): copied unchanged.
+    match ("robots.txt" .||. "google*.html") $ do
       route   idRoute
       compile copyFileCompiler
 
