@@ -136,6 +136,10 @@ th {
   color: var(--heading);
   border-bottom: 0.2rem solid var(--line);
 }
+/* Talk schedule: an unusual time stands out in purple; small note under a topic. */
+.schedule .moved { color: var(--nav); font-weight: bold; }
+.schedule .after-talk { font-size: 1.2rem; color: var(--ipa); }
+
 /* Talk schedule: keep dates and speaker names on one line. */
 .schedule td:nth-child(1), .schedule td:nth-child(4) { white-space: nowrap; }
 
