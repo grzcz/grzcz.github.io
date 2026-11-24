@@ -23,7 +23,7 @@ Everyone's welcome: [email me](mailto:czech@math.univ-paris13.fr) to be added to
 | 25 Nov 2026<br>14:00–15:30 | 3   | Monads                                        | Elsa Lubek     | [BU Grands Moulins](https://maps.app.goo.gl/S5EkFSFoc9UYjdoZ6), room 7 | –     |
 | 2 Dec 2026<br><span class="moved">16:00–17:30</span> | 4 | Operads in topology<br><span class="after-talk">Followed by a beer 🍻</span> | Dominik Gdesz | TBA | –     |
 | 9 Dec 2026<br>14:00–15:30  | 5   | TBA                                           | TBA            | TBA                         | –     |
-| 16 Dec 2026<br>14:00–15:30 | 6   | TBA                                           | TBA            | TBA                         | –     |
+| 16 Dec 2026<br>14:00–15:30 | 6   | Lawvere theories                              | Quentin Schroeder | TBA                      | –     |
 :::
 
 ### Resources
