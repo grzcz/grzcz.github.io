@@ -20,7 +20,7 @@ Everyone's welcome: [email me](mailto:czech@math.univ-paris13.fr) to be added to
 |---------------------------|:----:|-----------------------------------------------|----------------|-----------------------------|:-----:|
 | 3 Nov 2026<br>10:00–11:30 | 1    | Introduction to operads and multicategories   | Grzegorz Czech | [BU Grands Moulins](https://maps.app.goo.gl/S5EkFSFoc9UYjdoZ6), room 8 | [pdf](/files/operads/operads-notes-1.pdf) |
 | 18 Nov 2026<br>14:00–15:30 | 2   | Introductory stuff continued                  | Thomas Moore   | [BU Grands Moulins](https://maps.app.goo.gl/S5EkFSFoc9UYjdoZ6), room 8 | [pdf](/files/operads/operads-notes-2.pdf) |
-| 25 Nov 2026<br>14:00–15:30 | 3   | Monads                                        | Elsa Lubek     | TBA                         | –     |
+| 25 Nov 2026<br>14:00–15:30 | 3   | Monads                                        | Elsa Lubek     | [BU Grands Moulins](https://maps.app.goo.gl/S5EkFSFoc9UYjdoZ6), room 7 | –     |
 | 2 Dec 2026<br><span class="moved">16:00–17:30</span> | 4 | Operads in topology<br><span class="after-talk">Followed by a beer 🍻</span> | Dominik Gdesz | TBA | –     |
 | 9 Dec 2026<br>14:00–15:30  | 5   | TBA                                           | TBA            | TBA                         | –     |
 | 16 Dec 2026<br>14:00–15:30 | 6   | TBA                                           | TBA            | TBA                         | –     |
